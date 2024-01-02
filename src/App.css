@@ -1,0 +1,68 @@
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.wrapper { 
+  padding: 5px;
+  border: 13px solid green;
+  height: 96vh;
+  background:linear-gradient(white,yellow);
+}
+.wrapper .area{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 5px;
+  justify-content: space-evenly;
+}
+.wrapper .area textarea{
+  
+  box-shadow: 2px 2px 12px 2px;
+  height: 30vh;
+   margin: 15px;
+   font-size: 20px;
+  border: 3px solid black;
+}
+.wrapper .area span{
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.output{
+  width:50%;
+  overflow: hidden;
+}
+.output iframe{
+  background: white;
+  overflow: hidden;
+}
+.nav{
+  margin-left: 10px;
+  font-family: cursive;
+  text-align: center;
+}
+.content{
+  display: flex;  
+  height: 80vh;
+}
+@media screen and (max-width: 602px) {
+  .content{
+    flex-direction: column;
+  }
+  .wrapper .area{
+    width: 100%;
+  }
+  .wrapper{
+    height: 200vh;
+  }
+  .wrapper .output{
+    height: 70vh;
+  }
+  .content{
+    height: 100%;
+  }
+  .output{
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+  }
+  }
